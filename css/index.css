@@ -46,7 +46,7 @@ body{
 }
 
 .stage:hover .outro-text {
-    animation: outro-text 70s ease 13s 1;
+    animation: outro-text 75s ease 13s 1;
 }
 
 @keyframes outro-text{
@@ -93,6 +93,7 @@ p{
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    transform: perspective(300px) rotateX(45deg);
 }
 
 audio{width: 15rem; height: 1rem; margin-left: 32.5rem;}
