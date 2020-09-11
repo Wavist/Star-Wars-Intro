@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    color: orange;
+    overflow: hidden;
+    margin-left: -3rem;
+    cursor: cell;
+}
+
+.outro{
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+}
+
+.stage:hover .outro {
+    animation: animate 15s ease-in 2.5s forwards 1;
+}
+
+.stage:hover audio {
+    animation: animate 1s ease-in 2.5s forwards 1;
+}
+
+
+@keyframes animate{
+    0%{
+        top: 70rem;
+        transform: scale(4.5);
+    }
+
+    50%{
+        top: 30rem;
+        transform: scale(2.5);
+    }
+
+    100%{
+        top: -15rem;
+        transform: scale(0);
+    }
+}
+
+
+.outro-text{
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+}
+
+.stage:hover .outro-text {
+    animation: outro-text 70s ease 13s 1;
+}
+
+@keyframes outro-text{
+    0%{
+        top: -20rem;    
+        transform: scaleX(1) scale(1);
+        
+    }
+
+    25%{
+        top: -40rem;
+        transform: scaleX(2) scale(.8);
+    }
+
+    50%{
+        top: -60rem;
+        transform: scaleX(3) scale(.6);
+    }
+
+
+    75%{
+        top: -80rem;
+        transform: scaleX(4) scale(.4);
+    }
+
+    100%{
+        top: -110rem;
+        transform: scaleX(5) scale(.1);
+    }
+}
+
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 13rem;
+}
+
+p{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+audio{width: 15rem; height: 1rem; margin-left: 32.5rem;}
